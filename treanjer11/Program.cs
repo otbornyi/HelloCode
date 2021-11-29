@@ -1,4 +1,4 @@
-﻿int A = 123;
+﻿int A = 120;
 long B = 3;
 if(A % B == 0)
 {
