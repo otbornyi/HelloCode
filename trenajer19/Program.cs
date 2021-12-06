@@ -1,6 +1,6 @@
-﻿int X = 0;
+﻿int X = new Random().Next(-10, 10);
 Console.WriteLine(X);
-int Y = 1;
+int Y = new Random().Next(-10, 10);
 Console.WriteLine(Y);
 if(X == 0)
 {
