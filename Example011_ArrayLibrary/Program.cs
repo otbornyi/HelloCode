@@ -4,7 +4,7 @@
     int index = 0;
     while (index < length)
     {
-        collection[index] = new Random().Next(1, 10);
+        collection[index] = 10;
         //index = index + 1;
         index++;
     }
@@ -41,13 +41,15 @@ int IndexOf(int[] collection, int find)
 int[] array = new int[10];
 
 FillArray(array);
-array[4] = 4;
-array[6] = 4;
+array[0] = 1;
+array[6] = 6;
 
 PrintArray(array);
 Console.WriteLine();
 
 int pos = IndexOf(array, 4);
 Console.WriteLine(pos);
+
+// Смена заданных элементов массивы , другими заданными элементами.
 
 

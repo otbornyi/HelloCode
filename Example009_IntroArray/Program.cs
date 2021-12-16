@@ -15,3 +15,5 @@ int result = Max(
 );
 Console.WriteLine(result);
 
+// Поиск максимального числа в массиве.
+

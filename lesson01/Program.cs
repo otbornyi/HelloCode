@@ -36,7 +36,7 @@ void FillArray(int[,] matr)
     {
         for(int j = 0; j < matr.GetLength(1); j++)
         {
-            matr[i, j] = new Random().Next(500, 1000);
+            matr[i, j] = new Random().Next(1, 10);
         }
     }
 }
@@ -45,3 +45,5 @@ PrintArray(matrix);
 Console.WriteLine();
 FillArray(matrix);
 PrintArray(matrix);
+
+// Задание и заполнение массиваю

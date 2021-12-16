@@ -9,3 +9,4 @@ else
     long C = A % B;
     Console.WriteLine(C);
 }
+// Проверка кратности одного числа к другому.

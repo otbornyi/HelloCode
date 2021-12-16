@@ -13,3 +13,5 @@ if (B > max) max = B;
 if (C > max) max = C;
 Console.Write("max = ");
 Console.WriteLine(max);
+
+// Найти максимальное число.

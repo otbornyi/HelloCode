@@ -41,5 +41,7 @@ FillArray(array);
 PrintArray(array);
 Console.WriteLine();
 
-int pos = IndexOf(array, 4);
+int pos = IndexOf(array, 1);
 Console.WriteLine(pos);
+
+// Нахождение индекса искомого элемента в массиве.

@@ -13,3 +13,5 @@ else
     Console.Write(" больше ");
     Console.Write(B);
 }
+
+// Проверить какое число больше.
