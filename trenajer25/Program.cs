@@ -8,7 +8,7 @@ for(int i = 1; i < B; i++)
     A++;
 }
 Console.WriteLine();
-Console.Write("Факториалом числа ");
+Console.Write("суммой чисел ");
 Console.Write(B);
 Console.Write(" является - ");
 Console.WriteLine(Z);
