@@ -1,13 +1,8 @@
-﻿Console.WriteLine("Введите ваше число : ");
-string A = Console.ReadLine();
-char[] B = A.ToString().ToCharArray();
-int C = 0;
+﻿double A = 10;
 
-for(int i = 0; i < B.Length; i++)
+double cube()
 {
-    C++;
+    double Z = Math.Pow(1, 3);
 }
 
-Console.Write("Цифр в вашем числе : ");
-Console.WriteLine(C);
-
+double C = cube(A);
