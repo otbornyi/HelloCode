@@ -1,4 +1,5 @@
-﻿int A = 15487;
+﻿Console.Write("Введите число ");
+int A = int.Parse(Console.ReadLine());
 int C = 0;
 int B = A;
 while(B > 1)
@@ -7,16 +8,6 @@ while(B > 1)
     C = C + 1;
 }
 C = C + 1;
-
-
-// void PrintArray(int[] Z)
-// {
-//     for (int i = 0; i < Z.Length; i++)
-//     {
-//         Console.Write($"{Z[i]} ");
-//     }
-//     Console.WriteLine();
-// }
 
 void FillArray(int[] Z)
 {
@@ -45,7 +36,6 @@ void returnArray(int[] Z)
 
 int[] Z = new int[C];
 FillArray(Z);
-// PrintArray(Z);
 returnArray(Z);
 
 // Программа вычисления из десятичной системы в двоичную.
