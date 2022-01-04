@@ -23,6 +23,7 @@ void FindNumbers(int[,] A)
 {
     Console.Write("Введите число : ");
     int number = int.Parse(Console.ReadLine());
+    int k = 0;
     for (int i = 0; i < A.GetLength(0); i++)
     {
         for (int j = 0; j < A.GetLength(1); j++)
@@ -31,8 +32,13 @@ void FindNumbers(int[,] A)
             {
                 Console.Write($"Данное число встречается в массиве в позициии {i}, {j}");
                 Console.WriteLine();
+                k++;
             }
         }
+    }
+    if(k == 0)
+    {
+        Console.WriteLine("Такого элемента в массиве нету");
     }
 }
 int[,] A = new int[4, 5];
