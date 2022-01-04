@@ -1,16 +1,14 @@
-﻿void FillArray(double[,] A)
+﻿void FillArray(int[,] A)
 {
     for (int i = 0; i < A.GetLength(0); i++)
     {
         for (int j = 0; j < A.GetLength(1); j++)
         {
-            A[i, j] = new Random().Next(10, 30);
+            A[i, j] = new Random().Next(10, 40);
         }
     }
 }
-
-
-void PrintArray(double[,] A)
+void PrintArray(int[,] A)
 {
     for (int i = 0; i < A.GetLength(0); i++)
     {
@@ -20,28 +18,24 @@ void PrintArray(double[,] A)
         }
         Console.WriteLine();
     }
-    Console.WriteLine();
 }
-
-void returnArray(double[,] A)
+void FindNumbers(int[,] A)
 {
+    Console.Write("Введите число : ");
+    int number = int.Parse(Console.ReadLine());
     for (int i = 0; i < A.GetLength(0); i++)
     {
         for (int j = 0; j < A.GetLength(1); j++)
         {
-            if(i % 2 == 0 && j % 2 == 0)
+            if(A[i, j] == number)
             {
-                A[i, j] = Math.Pow(A[i, j], 2);
+                Console.Write($"Данное число встречается в массиве в позициии {i}, {j}");
+                Console.WriteLine();
             }
         }
     }
 }
-
-double[,] A = new double[4, 4];
+int[,] A = new int[4, 5];
 FillArray(A);
 PrintArray(A);
-returnArray(A);
-PrintArray(A);
-
-
-// Если оба индекса ЧЕТНЫЕ, показать их квадраты.
+FindNumbers(A);

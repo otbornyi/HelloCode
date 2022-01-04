@@ -3,8 +3,8 @@ int A = 0;
 for(int i = 0; i < count; i++)
 {
     Console.Write("Введите число ");
-    int username = int.Parse(Console.ReadLine());
-    if(username > 0)
+    int number = int.Parse(Console.ReadLine());
+    if(number > 0)
     {
         A = A + 1;
     }
