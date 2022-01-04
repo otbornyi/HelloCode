@@ -1,27 +1,16 @@
-﻿void PrintArray(int[,] A)
-{
-    for (int i = 0; i < A.GetLength(0); i++)
-    {
-        for (int j = 0; j < A.GetLength(1); j++)
-        {
-            Console.Write($"{A[i, j]} ");
-        }
-        Console.WriteLine();
-    }
-}
+﻿Console.WriteLine("Введите числа : ");
+string a = Console.ReadLine();
+int length = a.Length;
+int b = 0;
+int count = 0;
 
-void FillArray(int[,] A)
+for (int i = 0; i < a.Length; i++)
 {
-    int Z = 1;
-    for (int i = 0; i < A.GetLength(0); i++)
+    b = Convert.ToInt32(a[i]);
+    Console.WriteLine(b);
+    if(b > 0)
     {
-        for (int j = 0; j < A.GetLength(1); j++)
-        {
-            A[i, j] = Z * 2;
-            Z++;
-        }
+        count++;
     }
 }
-int[,] A = new int [3,3];
-FillArray(A);
-PrintArray(A);
+Console.WriteLine($"Введено чисел больше ноля {count}");
